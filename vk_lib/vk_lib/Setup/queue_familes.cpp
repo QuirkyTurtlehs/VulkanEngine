@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "../render.h"
 #include "queue_families.h"
 

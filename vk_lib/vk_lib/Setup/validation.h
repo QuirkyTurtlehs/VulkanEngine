@@ -1,37 +1,13 @@
 #pragma once
-#define GLFW_INCLUDE_VULKAN
+#include <vector> //find better solution to this
 
-#include <GLFW/glfw3.h>
-
-#ifdef NDEBUG
-const bool enableValidationLayers = false;
-#else
-const bool enableValidationLayers = true;
-#endif
-
-class Device{
+class Validation
+{
 public:
-	Device();
-	~Device();
+	Validation();
+	~Validation();
 
-	VkDevice GetDevice() const { return _device; }
-
-private:
-	VkInstance _instance;
-	VkDebugUtilsMessengerEXT debugMessenger;
-
-	VkDevice _device = VK_NULL_HANDLE;
-	VkPhysicalDevice _physicalDevice;
-	VkQueue _graphicsQueue;
-
-	const std::vector<const char*> validationLayers = { "VK_LAYER_KHRONOS_validation" };
-
-	void CreateInstance();
-
-	bool isDeviceSuitable(VkPhysicalDevice device);
-	void PickPhysicalDevice();
-
-	void CreateDevice();	
+	/*const std::vector<const char*> validationLayers = {"VK_LAYER_KHRONOS_validation"};
 
 	bool checkValidationLayerSupport();
 	VkResult CreateDebugUtilsMessengerEXT(VkInstance instance, const VkDebugUtilsMessengerCreateInfoEXT* pCreateInfo,
@@ -47,6 +23,7 @@ private:
 		VkDebugUtilsMessageSeverityFlagBitsEXT messageSeverity,
 		VkDebugUtilsMessageTypeFlagsEXT messageType,
 		const VkDebugUtilsMessengerCallbackDataEXT* pCallbackData,
-		void* pUserData);
-};
+		void* pUserData);*/
 
+private:
+};

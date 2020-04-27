@@ -15,13 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="targetver.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Setup\instance.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Setup\device.h">
@@ -33,18 +27,18 @@
     <ClInclude Include="Setup\queue_families.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Setup\validation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Setup\instance.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Setup\device.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Setup\queue_familes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Setup\validation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
